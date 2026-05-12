@@ -1,0 +1,69 @@
+.item{
+    background: fixed black;
+    border-radius: 10px;
+    border: 1px solid;
+    margin-bottom: 20px;
+    padding: 40px;
+    width: 800px;
+}
+
+h1{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+h2{
+    color: white;
+}
+
+main{
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span{
+    color: red;
+}
+
+a{
+    background: red;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    margin-top: 70px;
+}
+
+.btn{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+img{
+    box-sizing: border-box;
+}
+
+.fusca{
+    background: fixed black;
+    border-radius: 10px;
+    border: 1px solid;
+    margin-bottom: 20px;
+    padding: 40px;
+    width: 800px;
+}
+
+.body{
+    background: black;
+    background-color: black;
+    margin: 10px;
+    padding: 40px;
+    width: 800px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+
+}
