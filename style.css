@@ -1,68 +1,122 @@
-* {
+*{
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif color: #fff;
 }
 
-.container-main {
+.cartao-interno{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.9s ease-in-out;
+}
+
+.cartao-interno.girar{
+    transform: rotateY(180deg)
+}
+
+body{
+    background: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    justify-content: center;
     align-items: center;
-    background: linear-gradient(#07c8f9, #0d41e1);
-    height: 100vh;
+    justify-content:center;
 }
 
-.container {
-    background: #0d41e1;
+.cartao-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+    perspective: 1000px;
+}
+
+.face{
+    width: 600px;
+    border-radius: 15px;
+    background: linear-gradient(to right, #43c197, #1c1554);
+    color: white;
     padding: 20px;
-    margin: 0 auto;
-    width: 300px;
-    border: 1px solid black;
-    border-radius: 20px;
-    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    backface-visibility: hidden;
+    position: absolute;
+    box-sizing: border-box;
 }
 
-.container form {
+.face.verso{
+    transform: rotateY(180deg);
+}
+
+.frente{
+    display: flex;
+    gap: 20px;
+}
+
+.foto img{
+    width: 180px;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid white;
+    object-fit: cover;
+}
+
+.dados{
+    flex: 1;
+}
+
+.dados p{
+    font-size: 12px;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.dados h1{
+    font-size: 24px;
+}
+
+.dados h2{
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.id{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.verso{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.campo {
+.inicio{
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 5px;
 }
 
-.campo label {
-    width: 60px;
-    flex-shrink: 0;
+.container-meio{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.campo input {
-    flex: 1;
-    padding: 8px;
-    border-radius: 5px;
-    border: none;
-    background: #07c8f9;
-    color: #000;
+.codigo{
+    background: black;
+    height: 60px;
+    border-radius: 10px;
 }
 
-.botao button {
-    width: 100%;
-    background-color: #000;
-    border: none;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-weight: bold;
+.assinatura{
+    background: white;
+    color: black;
+    border-radius: 10px;
+    padding: 15px;
 }
 
-.campo input::placeholder{
-    color: #000;
+.informacoes h3{
     font-size: 14px;
+    font-weight: normal;
 }

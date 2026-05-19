@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carteira Estudantil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cartao-container" id="areaCartao">
+        <div class="cartao-interno" id="meuCartao">
+        <!-- FRENTE -->
+        <div class="face frente">
+            <div class="foto">
+                <img src="/index/img/WhatsApp Image 2026-05-05 at 16.11.29.jpeg" alt="">
+            </div>
+            <div class="dados">
+                <p>NOME DO ALUNO</p>
+                <h1>ALINE KAROLAINE</h1>
+                <p>CPF</p>
+                <h2>142.000.000-00</h2>
+                <p>INSTITUIÇÃO/CURSO</p>
+                <h2>UFPE - ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</h2>
+                <p>MATRÍCULA</p>
+                <h2>2020000000</h2>
+                <div class="id">
+                    <h3>ID: 0067875217</h3>
+                    <h2>2026</h2>
+                </div>
+            </div>
+        </div>
+        <!-- VERSO -->
+        <div class="face verso">
+            <div class="inicio">
+                <h1>VERSO</h1>
+                <h2>DOCUMENTO<br>ESTUDANTIL</h2>
+            </div>
+            <hr>
+            <div class="container-meio">
+                <div class="codigo"></div>
+                <p class="assinatura">
+                    Assinatura do Estudante:
+                    ______________________________________
+                </p>
+                <div class="informacoes">
+                    <h3>Este cartão é pessoal e intransferível.</h3>
+                    <h3>Em caso de perda, comunicar à instituição.</h3>
+                    <h3>Contato: ufpe@ufpe.br</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        const cartao = document.getElementById ('meuCartao');
+        const  areaCartao = document.getElementById ('areaCartao');
+
+        areaCartao.addEventListener('click', function ()
+        {
+            cartao.classList.toggle ('girar');
+    
+        })
+    </script>
+
+</body>
+
+</html>
